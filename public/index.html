@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <title>HTMX Static Demo</title>
 </head>
 
 <body>
     <h1>HTMX Static Demo</h1>
 
-    <div id="target-div"></div>
-
-    <button>Click Me</button>
+    <button hx-get="/clicked" hx-swap="outerHTML">
+        Click Me
+    </button>
 </body>
 
 </html>
